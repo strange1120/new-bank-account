@@ -15,7 +15,11 @@ public abstract class Account implements InterestRate {
 
 		index++;
 		this.accountNumber = setAccountNumber();
+
+		setRate();
 	}
+
+	public abstract void setRate();
 
 	private String setAccountNumber() {
 		String lastTwoOfSSN = SSN.substring(SSN.length() - 2, SSN.length());
@@ -26,7 +30,8 @@ public abstract class Account implements InterestRate {
 	}
 
 	public void showInfo() {
-		System.out.println("NAME: " + name + "\nACCOUNT NUMBER: " + accountNumber + "\nBalance: " + balance);
+		System.out.println("NAME: " + name + "\nACCOUNT NUMBER: " + accountNumber + "\nBalance: " + balance + "\nRATE: "
+				+ interestRate + "%");
 	}
 
 }
