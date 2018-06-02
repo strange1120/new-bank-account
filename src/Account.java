@@ -15,15 +15,18 @@ public abstract class Account implements InterestRate {
 
 		index++;
 		this.accountNumber = setAccountNumber();
-		System.out.println("ACCOUNT NUMBER" + this.accountNumber);
-
 	}
 
 	private String setAccountNumber() {
 		String lastTwoOfSSN = SSN.substring(SSN.length() - 2, SSN.length());
 		int uniqueId = index;
+		int randomNumber = (int) (Math.random() * Math.pow(10, 3));
 
-		return lastTwoOfSSN + uniqueId;
+		return lastTwoOfSSN + uniqueId + randomNumber;
+	}
+
+	public void showInfo() {
+		System.out.println("NAME: " + name + "\nACCOUNT NUMBER: " + accountNumber + "\nBalance: " + balance);
 	}
 
 }

@@ -5,7 +5,10 @@ public class BankAccountApp {
 
 		Checking checkingAccount1 = new Checking("Tom Wilson", "738476374", 1500);
 
-		Savings savingAccount1 = new Savings("Rich Lowe", "837485746", 2500);
+		Savings savingsAccount1 = new Savings("Rich Lowe", "837485746", 2500);
+
+		savingsAccount1.showInfo();
+		checkingAccount1.showInfo();
 	}
 
 }
