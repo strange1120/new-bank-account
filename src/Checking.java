@@ -1,10 +1,12 @@
 
 public class Checking extends Account {
 
-	public Checking(String name) {
-		super(name);
+	int debitCardNumber;
+	int debitCardPin;
+
+	public Checking(String name, String SSN, double initialDeposit) {
+		super(name, SSN, initialDeposit);
 		System.out.println("NEW CHECKING ACCOUNT");
-		System.out.println("NAME: " + name);
 	}
 
 }

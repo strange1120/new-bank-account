@@ -1,8 +1,11 @@
 
 public class Savings extends Account {
 
-	public Savings(String name) {
-		super(name);
+	int safetyDepositBoxId;
+	int safetyDepositBoxKey;
+
+	public Savings(String name, String SSN, double initialDeposit) {
+		super(name, SSN, initialDeposit);
 		System.out.println("NEW SAVINGS ACCOUNT");
 	}
 }
