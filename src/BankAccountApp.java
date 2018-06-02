@@ -8,6 +8,7 @@ public class BankAccountApp {
 		Savings savingsAccount1 = new Savings("Rich Lowe", "837485746", 2500);
 
 		savingsAccount1.showInfo();
+		System.out.println("***************");
 		checkingAccount1.showInfo();
 	}
 
